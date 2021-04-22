@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="lib/bootstrap.min.css">
-    <link rel="stylesheet" href="lib/font-awesome.css">
+    
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/6a86cd4f89.js" crossorigin="anonymous"></script>
+    
     
     <title>John Doe</title>
 </head>
@@ -22,16 +23,16 @@
             </div>
 
             <div class="nav-right">
-                <a class="navbar__item" href="#">Home</a>
-                <a class="navbar__item" href="#">Resume</a>
-                <a class="navbar__item" href="#">Services</a>
-                <a class="navbar__item" href="#">Blog</a>
-                <a class="navbar__item" href="#">Contact</a>
+                <a class="navbar__item active-nav" href="#HOME">Home</a>
+                <a class="navbar__item" href="#RESUME">Resume</a>
+                <a class="navbar__item" href="#SERVICES">Services</a>
+                <a class="navbar__item" href="#BLOG">Blog</a>
+                <a class="navbar__item" href="#CONTACT">Contact</a>
             </div>
         </nav>
 
         <div class="pages">
-            <section class="page" id="HOME">
+            <section class="page active-page" id="HOME">
                 <div class="page-header">
                     <div class="row">
                         <div class="col-sm-4">
@@ -362,18 +363,139 @@
                     </div>
                 </div>
             </section>
+
+            <section class="page" id="BLOG">
+                <div class="page-header">
+                    <h2>Blog</h2>
+                </div>
+
+                <div class="page-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <did class="blog-item">
+                                <div class="blog-card">
+                                    <div class="media-block">
+
+                                    </div>
+
+                                    <div class="post-info">
+
+                                    </div>
+                                </div>
+                            </did>
+                        </div>
+
+                        <div class="col-md-6">
+
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </section>
+
+            <section class="page" id="CONTACT">
+                <div class="page-header">
+                    <h2>Contact</h2>
+                </div>
+
+                <div class="page-content">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="block-title">
+                                <h3>Get in <span class="highlight">Touch</span></h3>
+                            </div>
+
+                            <div id="map"></div>
+
+                            <div class="contact-info-block">
+                                <div class="ci-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+
+                                <div class="ci-text">
+                                    <h5><span>Brisbane, Australia</span></h5>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-block">
+                                <div class="ci-icon">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+
+                                <div class="ci-text">
+                                    <h5><span>info@jiangren.com.au</span></h5>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-block">
+                                <div class="ci-icon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+
+                                <div class="ci-text">
+                                    <h5><span>+123 654 78900</span></h5>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-block">
+                                <div class="ci-icon">
+                                    <i class="fa fa-check"></i>
+                                </div>
+
+                                <div class="ci-text">
+                                    <h5><span>Freelance Available</span></h5>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <div class="block-title">
+                                <h3>Contact <span class="highlight">Form</span></h3>
+                            </div>
+
+                            <form>
+                                <div class="form-group">
+                                    <i class="fa fa-user"></i>
+                                    <label>Full Name</label>
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder required="required">
+                                </div>
+
+                                <div class="form-group">
+                                    <i class="fa fa-envelope"></i>
+                                    <label>Email Address</label>
+                                    <input id="form_email" type="text" name="email" class="form-control" placeholder required="required">
+                                </div>
+
+                                <div class="form-group">
+                                    <i class="fa fa-comment"></i>
+                                    <label>Message for Me</label>
+                                    <textarea id="form_comment" type="text" name="comment" class="form-control" placeholder required="required"></textarea>
+                                </div>
+
+                                <input class="submit-btn" type="submit" value="SEND MESSAGE">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </div>
 
     </div>
+
+
+    <footer>
+        <div class="copyrights">
+            © 2017 All rights reserved. Designed by <a href="#">Jiangren</a>
+        </div>
+
+        <div class="copyrights">
+            Australia IT Professional Community <a href="#">Melbourne</a><a href="#">Sydney</a><a href="#">Brisbane</a>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
-
-<footer>
-    <div class="copyrights">
-        © 2017 All rights reserved. Designed by <a href="#">Jiangren</a>
-    </div>
-
-    <div class="copyrights">
-        Australia IT Professional Community <a href="#">Melbourne</a><a href="#">Sydney</a><a href="#">Brisbane</a>
-    </div>
-</footer>
 </html>
