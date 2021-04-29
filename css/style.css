@@ -44,15 +44,31 @@ body {
   display: block;
 }
 .navbar .nav-right .navbar__item {
-  padding: 16px;
+  padding: 8px 16px;
   text-decoration: none;
   color: #49515d;
   font-size: 15px;
   opacity: 0.6;
   display: inline-block;
+  position: relative;
 }
-.navbar .nav-right .active-nav {
+.navbar .nav-right .navbar__item::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #2eca7f;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+  transition: all 0.15s ease-in-out;
+}
+.navbar .nav-right .navbar__item:hover, .navbar .nav-right .active-nav {
   opacity: 1;
+}
+.navbar .nav-right .navbar__item:hover::after, .navbar .nav-right .active-nav::after {
+  width: 25px;
 }
 
 .page {
