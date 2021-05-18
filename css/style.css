@@ -89,6 +89,12 @@ body {
   margin-bottom: 25px;
   text-align: center;
 }
+.page .page-header .header-left {
+  width: 30%;
+}
+.page .page-header .header-right {
+  width: 70%;
+}
 .page .page-header h2 {
   color: #fff;
   font-size: 44px;
@@ -140,6 +146,17 @@ body {
 .page .page-header .social-link a .fab {
   line-height: 36px;
   font-size: 16px;
+}
+.page .content-left {
+  width: 50%;
+  padding: 0 15px;
+}
+.page .content-right {
+  width: 50%;
+  padding: 0 15px;
+}
+.page .flex {
+  display: flex;
 }
 .page .page-content {
   padding-top: 20px;
@@ -261,7 +278,7 @@ body {
 .skill-info .skill-container {
   background-color: #f5f5f5;
   border: 1px solid #e0e0e0;
-  height: 12px;
+  height: 10px;
   margin-bottom: 12px;
   width: 100%;
 }
@@ -292,6 +309,9 @@ body {
   text-align: center;
   margin-bottom: 30px;
 }
+.services-block .service-info {
+  padding: 0 15px;
+}
 .services-block .service-image {
   width: 120px;
   height: 120px;
@@ -312,6 +332,10 @@ body {
 .services-block h4 {
   font-size: 17px;
   padding: 20px 0 0;
+}
+
+.client-content {
+  justify-content: space-around;
 }
 
 .client-block {
@@ -337,7 +361,7 @@ body {
   height: 36px;
   position: relative;
   text-align: center;
-  margin-top: -12px;
+  margin-top: 10px;
 }
 .contact-info-block .ci-icon i {
   position: relative;
