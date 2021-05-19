@@ -9,7 +9,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.container {
+.main {
   max-width: 1000px;
   margin: auto;
   min-height: 100vh;
