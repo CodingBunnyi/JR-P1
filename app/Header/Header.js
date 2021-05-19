@@ -1,5 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
+import Highlight from '../../components/Highlight';
+import NavBarItem from './component/NavBarItem/NavBarItem';
+
+const Nav = styled.nav`
+    padding:30px 0;
+    display: flex;
+    align-items: center;
+`;
+
+const NavLeft = styled.div`
+    flex: 1;
+`;
+
+const NavRight = styled.div`
+    display: block;
+`;
 
 const Logo = styled.div`
     font-size: 1.5rem;
@@ -10,25 +26,22 @@ const DefaultGray = styled.span`
     color: #49515d;
 `;
 
-const Highlight = styled.span`
-    color: #2eca7f;
-`;
 
-const Nav = () => (
-    <nav class="navbar">
-        <div class="nav-left">
-            <Logo class="logo">
+const Header = () => (
+    <Nav>
+        <NavLeft>
+            <Logo>
                 <DefaultGray>John</DefaultGray> <Highlight>Doe</Highlight>
             </Logo>
-        </div>
+        </NavLeft>
 
-        <div class="nav-right">
+        <NavRight>
             <a class="navbar__item active-nav" href="#HOME">Home</a>
             <a class="navbar__item" href="#RESUME">Resume</a>
             <a class="navbar__item" href="#SERVICES">Services</a>
             <a class="navbar__item" href="#CONTACT">Contact</a>
-        </div>
-    </nav>
+        </NavRight>
+    </Nav>
 );
 
-export default Nav;
+export default Header;

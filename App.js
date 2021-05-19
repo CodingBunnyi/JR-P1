@@ -1,11 +1,11 @@
 import React from 'react';
-import Nav from './app/Nav';
-import Pages from './app/Pages';
-import Footer from './app/Footer';
+import Header from './app/Header/Header';
+import Pages from './app/Pages/Pages';
+import Footer from './app/Footer/Footer';
 
 const App = () => (
     <div class="main">       
-        <Nav />
+        <Header />
         <Pages />
         <Footer />
     </div>

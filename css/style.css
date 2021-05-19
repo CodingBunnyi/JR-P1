@@ -22,18 +22,7 @@ body {
   color: #2eca7f;
 }
 
-.navbar {
-  padding: 30px 0;
-  display: flex;
-  align-items: center;
-}
-.navbar .nav-left {
-  flex: 1;
-}
-.navbar .nav-right {
-  display: block;
-}
-.navbar .nav-right .navbar__item {
+.navbar__item {
   padding: 8px 16px;
   text-decoration: none;
   color: #49515d;
@@ -42,7 +31,8 @@ body {
   display: inline-block;
   position: relative;
 }
-.navbar .nav-right .navbar__item::after {
+
+.navbar__item::after {
   content: "";
   position: absolute;
   width: 0;
@@ -54,10 +44,12 @@ body {
   margin: 0 auto;
   transition: all 0.15s ease-in-out;
 }
-.navbar .nav-right .navbar__item:hover, .navbar .nav-right .active-nav {
+
+.navbar__item:hover, .active-nav {
   opacity: 1;
 }
-.navbar .nav-right .navbar__item:hover::after, .navbar .nav-right .active-nav::after {
+
+.navbar__item:hover::after, .active-nav::after {
   width: 25px;
 }
 

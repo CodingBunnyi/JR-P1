@@ -26,17 +26,7 @@ body {
     color: $default_green;
 }
 
-.navbar {
-    padding:30px 0;
-    display: flex;
-    align-items: center;
-    .nav-left {
-        flex: 1;
 
-    }
-
-    .nav-right {
-        display: block;
         .navbar__item {
             padding: 8px 16px;
             text-decoration: none;
@@ -67,8 +57,6 @@ body {
         .navbar__item:hover::after, .active-nav::after{
             width:25px;
         }
-    }
-}
 
 .page {
     border-radius: 15px;
