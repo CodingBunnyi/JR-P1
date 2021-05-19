@@ -13,7 +13,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.container {
+.main {
     max-width: 1000px;
     margin: auto;
     min-height: 100vh;
@@ -32,17 +32,7 @@ body {
     align-items: center;
     .nav-left {
         flex: 1;
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 500;
 
-            .logo__default {
-                color: $default_gray;
-            }
-            .logo__highlight {
-                color: $default_green;
-            }
-        }
     }
 
     .nav-right {

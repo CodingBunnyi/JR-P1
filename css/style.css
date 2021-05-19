@@ -30,16 +30,6 @@ body {
 .navbar .nav-left {
   flex: 1;
 }
-.navbar .nav-left .logo {
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-.navbar .nav-left .logo .logo__default {
-  color: #49515d;
-}
-.navbar .nav-left .logo .logo__highlight {
-  color: #2eca7f;
-}
 .navbar .nav-right {
   display: block;
 }

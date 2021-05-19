@@ -1,11 +1,25 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const Logo = styled.div`
+    font-size: 1.5rem;
+    font-weight: 500;
+`;
+
+const DefaultGray = styled.span`
+    color: #49515d;
+`;
+
+const Highlight = styled.span`
+    color: #2eca7f;
+`;
 
 const Nav = () => (
     <nav class="navbar">
         <div class="nav-left">
-            <div class="logo">
-                <span class="logo__default">John</span> <span class="logo__highlight">Doe</span>
-            </div>
+            <Logo class="logo">
+                <DefaultGray>John</DefaultGray> <Highlight>Doe</Highlight>
+            </Logo>
         </div>
 
         <div class="nav-right">
