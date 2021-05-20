@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Highlight from '../../components/Highlight';
-import NavBarItem from './component/NavBarItem/NavBarItem';
+import NavBarItem from './component/NavBarItem';
 
 const Nav = styled.nav`
     padding:30px 0;

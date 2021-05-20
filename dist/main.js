@@ -86,6 +86,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./app/Pages/components/HomePage/Components/HomeContent/index.js":
+/*!***********************************************************************!*\
+  !*** ./app/Pages/components/HomePage/Components/HomeContent/index.js ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* reexport safe */ _HomeContent__WEBPACK_IMPORTED_MODULE_0__.default)\n/* harmony export */ });\n/* harmony import */ var _HomeContent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HomeContent */ \"./app/Pages/components/HomePage/Components/HomeContent/HomeContent.js\");\n\n\n//# sourceURL=webpack://jr-p1/./app/Pages/components/HomePage/Components/HomeContent/index.js?");
+
+/***/ }),
+
 /***/ "./app/Pages/components/HomePage/Components/HomeHeader/HomeHeader.js":
 /*!***************************************************************************!*\
   !*** ./app/Pages/components/HomePage/Components/HomeHeader/HomeHeader.js ***!
@@ -97,6 +108,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./app/Pages/components/HomePage/Components/HomeHeader/index.js":
+/*!**********************************************************************!*\
+  !*** ./app/Pages/components/HomePage/Components/HomeHeader/index.js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* reexport safe */ _HomeHeader__WEBPACK_IMPORTED_MODULE_0__.default)\n/* harmony export */ });\n/* harmony import */ var _HomeHeader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HomeHeader */ \"./app/Pages/components/HomePage/Components/HomeHeader/HomeHeader.js\");\n\n\n//# sourceURL=webpack://jr-p1/./app/Pages/components/HomePage/Components/HomeHeader/index.js?");
+
+/***/ }),
+
 /***/ "./app/Pages/components/HomePage/HomePage.js":
 /*!***************************************************!*\
   !*** ./app/Pages/components/HomePage/HomePage.js ***!
@@ -104,7 +126,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _Components_HomeContent_HomeContent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Components/HomeContent/HomeContent */ \"./app/Pages/components/HomePage/Components/HomeContent/HomeContent.js\");\n/* harmony import */ var _Components_HomeHeader_HomeHeader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Components/HomeHeader/HomeHeader */ \"./app/Pages/components/HomePage/Components/HomeHeader/HomeHeader.js\");\n\n\n\n\nconst HomePage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"section\", {\n  class: \"page active-page\",\n  id: \"HOME\"\n}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_HomeHeader_HomeHeader__WEBPACK_IMPORTED_MODULE_2__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_HomeContent_HomeContent__WEBPACK_IMPORTED_MODULE_1__.default, null));\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HomePage);\n\n//# sourceURL=webpack://jr-p1/./app/Pages/components/HomePage/HomePage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _Components_HomeContent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Components/HomeContent */ \"./app/Pages/components/HomePage/Components/HomeContent/index.js\");\n/* harmony import */ var _Components_HomeHeader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Components/HomeHeader */ \"./app/Pages/components/HomePage/Components/HomeHeader/index.js\");\n\n\n // const Home = styled.section`\n// `;\n\nconst HomePage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"section\", {\n  class: \"page active-page\",\n  id: \"HOME\"\n}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_HomeHeader__WEBPACK_IMPORTED_MODULE_2__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_HomeContent__WEBPACK_IMPORTED_MODULE_1__.default, null));\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HomePage);\n\n//# sourceURL=webpack://jr-p1/./app/Pages/components/HomePage/HomePage.js?");
 
 /***/ }),
 
