@@ -5,7 +5,7 @@ import ServicesPage from './components/ServicesPage';
 import ContactPage from './components/ContactPage';
 
 const Pages = () => (
-    <div class="pages">
+    <div>
         <HomePage />
 
         <ResumePage />

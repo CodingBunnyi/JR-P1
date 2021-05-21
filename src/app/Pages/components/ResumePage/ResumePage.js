@@ -1,4 +1,5 @@
 import React from 'react';
+import PageTitle from '~/components/PageTitle';
 
 const ResumePage = () => (
     <section class="page" id="RESUME">

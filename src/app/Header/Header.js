@@ -1,16 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import Highlight from '../../components/Highlight';
+import Highlight from '~/components/Highlight';
+import Flex from '~/components/Flex';
+import DefaultGray from '~/components/DefaultGray';
 import NavBarItem from './component/NavBarItem';
 
-const Nav = styled.nav`
-    padding:30px 0;
-    display: flex;
+const Nav = styled(Flex)`
+    padding: 30px 0;
     align-items: center;
 `;
 
 const NavLeft = styled.div`
-    flex: 1;
+    Flex: 1;
 `;
 
 const NavRight = styled.div`
@@ -21,11 +22,6 @@ const Logo = styled.div`
     font-size: 1.5rem;
     font-weight: 500;
 `;
-
-const DefaultGray = styled.span`
-    color: #49515d;
-`;
-
 
 const Header = () => (
     <Nav>
