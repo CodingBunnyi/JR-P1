@@ -1,8 +1,8 @@
 import React from 'react';
-import HomePage from './components/HomePage/HomePage';
-import ResumePage from './components/ResumePage/ResumePage';
-import ServicesPage from './components/ServicesPage/ServicesPage';
-import ContactPage from './components/ContactPage/ContactPage';
+import HomePage from './components/HomePage';
+import ResumePage from './components/ResumePage';
+import ServicesPage from './components/ServicesPage';
+import ContactPage from './components/ContactPage';
 
 const Pages = () => (
     <div class="pages">

@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './app/Header/Header';
-import Pages from './app/Pages/Pages';
-import Footer from './app/Footer/Footer';
+import Header from './app/Header';
+import Pages from './app/Pages';
+import Footer from './app/Footer';
 
 const App = () => (
     <div class="main">       
