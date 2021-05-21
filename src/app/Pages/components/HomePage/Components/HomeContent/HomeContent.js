@@ -1,47 +1,83 @@
 import React from 'react';
-import HomePage from '../../HomePage';
+import styled from 'styled-components';
+import Highlight from '~/components/Highlight';
+import DefaultGray from '~/components/DefaultGray';
+import PageContent from '~/components/PageContent';
+import ContentSection from '~/components/ContentSection';
+import SubTitle from '~/components/SubTitle';
+
+const InfoTitle = styled.span`
+    min-width: 120px;
+    display: inline-block;
+`;
+
+const InfoValue = styled(DefaultGray)`
+    opacity: 0.6;
+`;
+
+const Email = styled.a`
+    opacity: 1;
+    text-decoration: none;
+    color: #2eca7f;
+`;
+
+const InfoList = styled.ul`
+    list-style: none;
+`;
+
+const ListItem = styled.li`
+    margin: 5px 0;
+`;
+
+const Description = styled.p`
+    font-size: 15px;
+    margin: 0 0 10px;
+    font-weight: 400;
+`;
+
+const HompageContent = styled(PageContent)`
+    display: flex;
+`;
 
 const HomeContent = () => (
-    <div class="page-content flex">
-        <div class="content-left">
-            <div class="block-title">
-                <h3>About<span class="highlight"> Me</span></h3>
-            </div>
+    <HompageContent>
+        <ContentSection>
+            <SubTitle>About<Highlight> Me</Highlight></SubTitle>
 
-            <p>
+            <Description>
                 Hello! I’m John Doe. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum ullamcorper sem, at placerat dolor volutpat ac. Duis nulla enim, condimentum nec ultricies.
-            </p>
-        </div>
+            </Description>
+        </ContentSection>
 
-        <div class="content-right">
-            <ul class="info-list">
-                <li>
-                    <span class="title">Age</span>
-                    <span class="value">29</span>
-                </li>
+        <ContentSection>
+            <InfoList>
+                <ListItem>
+                    <InfoTitle>Age</InfoTitle>
+                    <InfoValue>29</InfoValue>
+                </ListItem>
 
-                <li>
-                    <span class="title">Residence</span>
-                    <span class="value">Australia</span>
-                </li>
+                <ListItem>
+                    <InfoTitle>Residence</InfoTitle>
+                    <InfoValue>Australia</InfoValue>
+                </ListItem>
 
-                <li>
-                    <span class="title">Address</span>
-                    <span class="value">Level 3 / 57 Coronation, Brisbane</span>
-                </li>
+                <ListItem>
+                    <InfoTitle>Address</InfoTitle>
+                    <InfoValue>Level 3 / 57 Coronation, Brisbane</InfoValue>
+                </ListItem>
 
-                <li>
-                    <span class="title">e-mail</span>
-                    <a href="#"><span class="value email">info@jiangren.com.au</span></a>
-                </li>
+                <ListItem>
+                    <InfoTitle>e-mail</InfoTitle>
+                    <Email href="#">nfo@jiangren.com.au</Email>
+                </ListItem>
 
-                <li>
-                    <span class="title">Phone</span>
-                    <span class="value">+0123 123 456 789</span>
-                </li>
-            </ul>
-        </div>
-    </div>
+                <ListItem>
+                    <InfoTitle>Phone</InfoTitle>
+                    <InfoValue>+0123 123 456 789</InfoValue>
+                </ListItem>
+            </InfoList>
+        </ContentSection>
+    </HompageContent>
 );
 
 export default HomeContent;

@@ -62,12 +62,12 @@ const AvatarBlock  =  styled.div`
     }
 `;
 
-const Header = styled(PageHeader)`
+const HomeHeaderBlock = styled(PageHeader)`
     display: flex;
 `;
 
 const HomeHeader =  () => (
-    <Header>
+    <HomeHeaderBlock>
         <Left>
             <AvatarBlock>
                 <Avatar src="images/photo.png"></Avatar>
@@ -100,7 +100,7 @@ const HomeHeader =  () => (
                 </SocialItem>
             </SocialItems>
         </Right>
-    </Header>
+    </HomeHeaderBlock>
 );
 
 export default HomeHeader;
