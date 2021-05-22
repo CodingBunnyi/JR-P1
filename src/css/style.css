@@ -74,24 +74,6 @@ body {
   height: 100%;
 }
 
-.skill-info h4 {
-  font-size: 0.8em;
-  margin: 0 0 5px;
-}
-.skill-info .skill-container {
-  background-color: #f5f5f5;
-  border: 1px solid #e0e0e0;
-  height: 10px;
-  margin-bottom: 12px;
-  width: 100%;
-}
-.skill-info .skill-percentage {
-  background-color: #2eca7f;
-  height: 10px;
-}
-.skill-info .skill-1 {
-  width: 88%;
-}
 .skill-info .skill-2 {
   width: 75%;
 }
