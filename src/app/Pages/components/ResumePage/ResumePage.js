@@ -86,6 +86,52 @@ const Company = styled.span`
     margin-bottom: 8px;
 `;
 
+const Description = styled.p`
+    font-size: 14px;
+`;
+
+const SkillName = styled.h4`
+    font-size: 0.8em;
+    margin: 0 0 5px;
+`;
+
+const SkillContainer = styled.div`
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    height: 10px;
+    margin-bottom: 12px;
+    width: 100%;
+`;
+
+const SkillPercentage = styled.div `
+    background-color: #2eca7f;
+    height: 10px;
+`;
+
+const Skill1 = styled(SkillPercentage)`
+    width: 88%;
+`;
+
+const Skill2 = styled(SkillPercentage)`
+    width: 75%;
+`;
+
+const Skill3 = styled(SkillPercentage)`
+    width: 60%;
+`;
+
+const Skill4 = styled(SkillPercentage)`
+    width: 95%;
+`;
+
+const Skill5 = styled(SkillPercentage)`
+    width: 75%;
+`;
+
+const Skill6 = styled(SkillPercentage)`
+    width: 92%;
+`;
+
 
 const ResumePage = () => (
 
@@ -103,25 +149,25 @@ const ResumePage = () => (
                         <TimeLineItem>
                             <TimeLineTitle>Specialization Course</TimeLineTitle>
                             <Period>2010</Period><Company>Apple Inc.</Company>
-                            <p class="item-description">
+                            <Description>
                                 Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.
-                            </p>
+                            </Description>
                         </TimeLineItem>
 
                         <TimeLineItem>
                             <TimeLineTitle>Specialization Course</TimeLineTitle>
                             <Period>2010</Period><Company>Apple Inc.</Company>
-                            <p class="item-description">
+                            <Description>
                                 Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.
-                            </p>
+                            </Description>
                         </TimeLineItem>
 
                         <TimeLineItem>
                             <TimeLineTitle>Specialization Course</TimeLineTitle>
                             <Period>2010</Period><Company>Apple Inc.</Company>
-                            <p class="item-description">
+                            <Description>
                                 Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.
-                            </p>
+                            </Description>
                         </TimeLineItem>  
                     </TimeLine>
                 </ContentSection>
@@ -133,25 +179,25 @@ const ResumePage = () => (
                         <TimeLineItem>
                             <TimeLineTitle>Specialization Course</TimeLineTitle>
                             <Period>2010</Period><Company>Apple Inc.</Company>
-                            <p class="item-description">
+                            <Description>
                                 Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.
-                            </p>
+                            </Description>
                         </TimeLineItem>
 
                         <TimeLineItem>
                             <TimeLineTitle>Specialization Course</TimeLineTitle>
                             <Period>2010</Period><Company>Apple Inc.</Company>
-                            <p class="item-description">
+                            <Description>
                                 Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.
-                            </p>
+                            </Description>
                         </TimeLineItem>
 
                         <TimeLineItem>
                             <TimeLineTitle>Specialization Course</TimeLineTitle>
                             <Period>2010</Period><Company>Apple Inc.</Company>
-                            <p class="item-description">
+                            <Description>
                                 Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.
-                            </p>
+                            </Description>
                         </TimeLineItem>                       
                     </TimeLine>
                 </ContentSection>
@@ -159,52 +205,51 @@ const ResumePage = () => (
 
             <ResumeSub> 
                 <ContentSection>
-                    <div class="block">
-                        <div class="block-title">
-                            <h3>Design <span class="highlight">Skill</span></h3>
+                    <div>
+                        <div>
+                            <SubTitle>Design <Highlight>Skill</Highlight></SubTitle>
                         </div>
 
-                        <div class="skill-info">
-                            <h4>Web Design</h4>
-                            <div class="skill-container">
-                                <div class="skill-percentage skill-1"></div>
-                            </div>
+                        <div>
+                            <SkillName>Web Design</SkillName>
+                            <SkillContainer>
+                                <Skill1></Skill1>
+                            </SkillContainer>
 
-                            <h4>Graphic Design</h4>
-                            <div class="skill-container">
-                                <div class="skill-percentage skill-2"></div>
-                            </div>
+                            <SkillName>Graphic Design</SkillName>
+                            <SkillContainer>
+                                <Skill2></Skill2>
+                            </SkillContainer>
 
-                            <h4>Print Design</h4>
-                            <div class="skill-container">
-                                <div class="skill-percentage skill-3"></div>
-                            </div>
-
+                            <SkillName>Print Design</SkillName>
+                            <SkillContainer>
+                                <Skill3></Skill3>
+                            </SkillContainer>
                         </div>
                     </div>
                 </ContentSection>
 
                 <ContentSection>
-                    <div class="block">
-                        <div class="block-title">
-                            <h3>Coding <span class="highlight">Skill</span></h3>
+                    <div>
+                        <div>
+                            <SubTitle>Coding <Highlight>Skill</Highlight></SubTitle>
                         </div>
 
                         <div class="skill-info">
-                            <h4>HTML5</h4>
-                            <div class="skill-container">
-                                <div class="skill-percentage skill-4"></div>
-                            </div>
+                            <SkillName>HTML5</SkillName>
+                            <SkillContainer>
+                                <Skill4></Skill4>
+                            </SkillContainer>
 
-                            <h4>CSS3/LESS/SASS</h4>
-                            <div class="skill-container">
-                                <div class="skill-percentage skill-5"></div>
-                            </div>
+                            <SkillName>CSS3/LESS/SASS</SkillName>
+                            <SkillContainer>
+                                <Skill5></Skill5>
+                            </SkillContainer>
 
-                            <h4>jQuery</h4>
-                            <div class="skill-container">
-                                <div class="skill-percentage skill-6"></div>
-                            </div>
+                            <SkillName>jQuery</SkillName>
+                            <SkillContainer>
+                                <Skill6></Skill6>
+                            </SkillContainer>
                         </div>
                     </div>
                 </ContentSection>
