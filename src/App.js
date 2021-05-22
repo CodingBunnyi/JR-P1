@@ -3,12 +3,16 @@ import Header from './app/Header';
 import Pages from './app/Pages';
 import Footer from './app/Footer';
 
-const App = () => (
-    <div class="main">       
-        <Header />
-        <Pages />
-        <Footer />
-    </div>
-);
+const App = () => {
+    const page ='HOME';
+
+    return (
+        <div class="main">       
+            <Header page={page}/>
+            <Pages page={page}/>
+            <Footer />
+        </div>
+    )
+};
 
 export default App;

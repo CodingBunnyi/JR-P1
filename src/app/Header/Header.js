@@ -11,7 +11,7 @@ const Nav = styled(Flex)`
 `;
 
 const NavLeft = styled.div`
-    Flex: 1;
+    flex: 1;
 `;
 
 const NavRight = styled.div`
@@ -23,21 +23,33 @@ const Logo = styled.div`
     font-weight: 500;
 `;
 
-const Header = () => (
-    <Nav>
-        <NavLeft>
-            <Logo>
-                <DefaultGray>John</DefaultGray> <Highlight>Doe</Highlight>
-            </Logo>
-        </NavLeft>
+const Header = ({page}) => {
 
-        <NavRight>
-            <a class="navbar__item active-nav" href="#HOME">Home</a>
-            <a class="navbar__item" href="#RESUME">Resume</a>
-            <a class="navbar__item" href="#SERVICES">Services</a>
-            <a class="navbar__item" href="#CONTACT">Contact</a>
-        </NavRight>
-    </Nav>
-);
+    const getNavBarItem = (key) => `navbar__item ${page === key && 'active-nav'}`
+
+    const navBarItems = [
+        {key: 'HOME', value: 'Home'},
+        {key: 'RESUME', value: 'Resume'},
+        {key: 'SERVICES', value: 'Services'},
+        {key: 'CONTACT', value: 'Contact'},
+    ]
+
+    return (
+        <Nav>
+            <NavLeft>
+                <Logo>
+                    <DefaultGray>John</DefaultGray> <Highlight>Doe</Highlight>
+                </Logo>
+            </NavLeft>
+
+            <NavRight>
+                {navBarItems.map((navBarItem) => (
+                    <a className={getNavBarItem(navBarItem.key)} href={navBarItem.value}>{navBarItem.value}</a>
+                ))}
+            
+            </NavRight>
+        </Nav>
+    )
+};
 
 export default Header;
