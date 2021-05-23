@@ -88,70 +88,54 @@ const Description = styled.p`
     font-size: 14px;
 `;
 
+const ResumeInfo = () => {
+    const educationItems = [
+        {course:'Specialization Course', period: '2010', school: 'UQ', description: 'Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.'},
+        {course:'Specialization Course', period: '2010', school: 'UQ', description: 'Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.'},
+        {course:'Specialization Course', period: '2010', school: 'UQ', description: 'Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.'},
+    ]
 
-const ResumeInfo = () => (
-    <ResumeInfoContainer>                   
-        <ContentSection>
-            <SubTitle>Education</SubTitle>
-            
-            <TimeLine>
-                <TimeLineItem>
-                    <TimeLineTitle>Specialization Course</TimeLineTitle>
-                    <Period>2010</Period><Company>Apple Inc.</Company>
-                    <Description>
-                        Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.
-                    </Description>
-                </TimeLineItem>
+    const experienceItems = [
+        {experience:'Specialization Experience', period: '2010', company: 'Apple Inc', description: 'Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.'},
+        {experience:'Specialization Experience', period: '2010', company: 'Apple Inc', description: 'Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.'},
+        {experience:'Specialization Experience', period: '2010', company: 'Apple Inc', description: 'Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.'},
+    ]
 
-                <TimeLineItem>
-                    <TimeLineTitle>Specialization Course</TimeLineTitle>
-                    <Period>2010</Period><Company>Apple Inc.</Company>
-                    <Description>
-                        Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.
-                    </Description>
-                </TimeLineItem>
+    return (
+        <ResumeInfoContainer>           
+            <ContentSection>
+                <SubTitle>Education</SubTitle>
+                
+                <TimeLine>
+                    {educationItems.map((educationItem) => (
+                        <TimeLineItem>
+                            <TimeLineTitle>{educationItem.course}</TimeLineTitle>
+                            <Period>{educationItem.period}</Period><Company>{educationItem.school}</Company>
+                            <Description>
+                                {educationItem.description}
+                            </Description>
+                        </TimeLineItem>
 
-                <TimeLineItem>
-                    <TimeLineTitle>Specialization Course</TimeLineTitle>
-                    <Period>2010</Period><Company>Apple Inc.</Company>
-                    <Description>
-                        Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.
-                    </Description>
-                </TimeLineItem>  
-            </TimeLine>
-        </ContentSection>
+                    ))}          
+                </TimeLine>
+            </ContentSection>
 
-        <ContentSection>
-            <SubTitle>Experience</SubTitle>
-
-            <TimeLine>
-                <TimeLineItem>
-                    <TimeLineTitle>Specialization Course</TimeLineTitle>
-                    <Period>2010</Period><Company>Apple Inc.</Company>
-                    <Description>
-                        Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.
-                    </Description>
-                </TimeLineItem>
-
-                <TimeLineItem>
-                    <TimeLineTitle>Specialization Course</TimeLineTitle>
-                    <Period>2010</Period><Company>Apple Inc.</Company>
-                    <Description>
-                        Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.
-                    </Description>
-                </TimeLineItem>
-
-                <TimeLineItem>
-                    <TimeLineTitle>Specialization Course</TimeLineTitle>
-                    <Period>2010</Period><Company>Apple Inc.</Company>
-                    <Description>
-                        Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.
-                    </Description>
-                </TimeLineItem>                       
-            </TimeLine>
-        </ContentSection>
-    </ResumeInfoContainer>
-
-);
+            <ContentSection>
+                <SubTitle>Experience</SubTitle>
+                <TimeLine>
+                {experienceItems.map((experienceItem) => (
+                    <TimeLineItem>
+                        <TimeLineTitle>{experienceItem.experience}</TimeLineTitle>
+                        <Period>{experienceItem.period}</Period><Company>{experienceItem.company}</Company>
+                        <Description>
+                            {experienceItem.description}
+                        </Description>
+                    </TimeLineItem>
+                ))}                            
+                </TimeLine>
+            </ContentSection>
+        </ResumeInfoContainer>
+    )
+};
 
 export default ResumeInfo;
