@@ -1,9 +1,9 @@
 import React from 'react';
-import HomeContent from './Components/HomeContent';
-import HomeHeader from './Components/HomeHeader';
+import HomeContent from './components/HomeContent';
+import HomeHeader from './components/HomeHeader';
 
 const HomePage = () => (
-    <section class="page" id="HOME">
+    <section className="page" id="HOME">
         <HomeHeader />
         <HomeContent />
     </section>

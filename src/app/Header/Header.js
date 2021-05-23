@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Highlight from '~/components/Highlight';
 import Flex from '~/components/Flex';
 import DefaultGray from '~/components/DefaultGray';
-import NavBarItem from './component/NavBarItem';
+
 
 const Nav = styled(Flex)`
     padding: 30px 0;
