@@ -4,7 +4,7 @@ import Pages from './app/Pages';
 import Footer from './app/Footer';
 
 const App = () => {
-    const page ='CONTACT';
+    const page ='HOME';
 
     return (
         <div class="main">       

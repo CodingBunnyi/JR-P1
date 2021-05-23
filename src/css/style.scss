@@ -268,15 +268,17 @@ body {
     }
 }
 
-    .ci-icon {
-        border-radius: 20px;
-        background-color: #fafafa;
-        width: 36px;
-        height: 36px;
-        position: relative;
-        text-align: center;
-        margin-top: 10px;  
-        i {
+
+
+    // .ci-icon {
+    //     border-radius: 20px;
+    //     background-color: #fafafa;
+    //     width: 36px;
+    //     height: 36px;
+    //     position: relative;
+    //     text-align: center;
+    //     margin-top: 10px;  
+        .contact-icon {
 
             position: relative;
             font-size: 18px;
@@ -284,22 +286,20 @@ body {
             text-align: center;
             line-height: 36px;
         }
-    }
+    // }
 
-    .ci-text {
-        display: inline-block;
-        margin-left: 15px;
-        h5 {
-            font-size: 0.83em;
-        }
-    }
+    // .ci-text {
+    //     display: flex;
+    //     margin-left: 15px;
+    //     align-items: center;
+    //     span {
+    //         font-size: 15px;
+    //         font-weight: bold;
+    //     }
+    // }
 
-.form-group {
-    position: relative;
-    padding-left: 40px;
-    border-bottom: 1px solid #e0e0e0;
-    margin: 0 0 25px;
-    i {
+
+    .fa {
         position: absolute;
         top:0;
         left:0;
@@ -312,46 +312,47 @@ body {
         font-size: 18px;
     }
 
-    label {
-        position: absolute;
-        top:0;
-        left:54px;
-        opacity: 0.4;
-        position: absolute;
-        top: 9px;
-        font-size: 15px;
-        font-weight: 400;
-    }
 
-    input {
-        position: relative;
-        background: transparent;
-        height:42px;
-        border: 0;
-        border-radius: 0;
-        &:focus {
-            background: transparent;
-            box-shadow: none;
-            outline: none;
+    // label {
+    //     position: absolute;
+    //     top:0;
+    //     left:54px;
+    //     opacity: 0.4;
+    //     position: absolute;
+    //     top: 9px;
+    //     font-size: 15px;
+    //     font-weight: 400;
+    // }
+
+    // input {
+    //     position: relative;
+    //     background: transparent;
+    //     height:42px;
+    //     border: 0;
+    //     border-radius: 0;
+    //     &:focus {
+    //         background: transparent;
+    //         box-shadow: none;
+    //         outline: none;
         
-        }
-    }
+    //     }
+    //  }
 
-    textarea {
-        border: 0;
-        border-radius: 0;
-    }
-}
+    // textarea {
+    //     border: 0;
+    //     border-radius: 0;
+    // }
 
-.submit-btn {
-    border:0;
-    background-color: $default_green;
-    color: $default_white;
-    padding: 0.5em 1.5em;
-    border-radius: 3px;
-    box-shadow: 0 1px 1px rgb(0 0 0 / 10%), 0 2px 4px rgb(0 0 0 / 30%);
-    font-weight: 500;
-}
+
+// .submit-btn {
+//     border:0;
+//     background-color: $default_green;
+//     color: $default_white;
+//     padding: 0.5em 1.5em;
+//     border-radius: 3px;
+//     box-shadow: 0 1px 1px rgb(0 0 0 / 10%), 0 2px 4px rgb(0 0 0 / 30%);
+//     font-weight: 500;
+// }
 
 footer {
     text-align: center;
