@@ -1,20 +1,34 @@
 import React from 'react';
+import styled from 'styled-components';
+import PageTitle from '~/components/PageTitle';
+import PageHeader from '~/components/PageHeader';
+import PageContent from '~/components/PageContent';
+import SubTitle from '~/components/SubTitle';
+
+const ContactPageContent = styled(PageContent)`
+    display: flex;
+`;
+
+const ContactInfo = styled.div`
+    display: flex;
+    margin-bottom: 20px;
+`;
 
 const ContactPage = () => (
-    <section class="page" id="CONTACT">
-        <div class="page-header">
-            <h2>Contact</h2>
-        </div>
+    <section className="page" id="CONTACT">
+        <PageHeader>
+            <PageTitle>Contact</PageTitle>
+        </PageHeader>
 
-        <div class="page-content flex">
+        <ContactPageContent>
             <div class="content-left">
                 <div class="block-title">
-                    <h3>Get in <span class="highlight">Touch</span></h3>
+                    <SubTitle>Get in <span class="highlight">Touch</span></SubTitle>
                 </div>
 
                 <div id="map"></div>
 
-                <div class="contact-info-block">
+                <ContactInfo>
                     <div class="ci-icon">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
@@ -22,9 +36,9 @@ const ContactPage = () => (
                     <div class="ci-text">
                         <h5><span>Brisbane, Australia</span></h5>
                     </div>
-                </div>
+                </ContactInfo>
 
-                <div class="contact-info-block">
+                <ContactInfo>
                     <div class="ci-icon">
                         <i class="fa fa-envelope"></i>
                     </div>
@@ -32,9 +46,9 @@ const ContactPage = () => (
                     <div class="ci-text">
                         <h5><span>info@jiangren.com.au</span></h5>
                     </div>
-                </div>
+                </ContactInfo>
 
-                <div class="contact-info-block">
+                <ContactInfo>
                     <div class="ci-icon">
                         <i class="fa fa-phone"></i>
                     </div>
@@ -42,9 +56,9 @@ const ContactPage = () => (
                     <div class="ci-text">
                         <h5><span>+123 654 78900</span></h5>
                     </div>
-                </div>
+                </ContactInfo>
 
-                <div class="contact-info-block">
+                <ContactInfo>
                     <div class="ci-icon">
                         <i class="fa fa-check"></i>
                     </div>
@@ -52,13 +66,13 @@ const ContactPage = () => (
                     <div class="ci-text">
                         <h5><span>Freelance Available</span></h5>
                     </div>
-                </div>
+                </ContactInfo>
 
             </div>
 
             <div class="content-right">
                 <div class="block-title">
-                    <h3>Contact <span class="highlight">Form</span></h3>
+                    <SubTitle>Contact <span class="highlight">Form</span></SubTitle>
                 </div>
 
                 <form>
@@ -83,7 +97,7 @@ const ContactPage = () => (
                     <input class="submit-btn" type="submit" value="SEND MESSAGE" />
                 </form>
             </div>        
-        </div>
+        </ContactPageContent>
     </section>
 );
 

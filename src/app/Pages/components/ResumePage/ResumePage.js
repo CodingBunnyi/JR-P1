@@ -7,7 +7,6 @@ import ResumeInfo from './components/ResumeInfo';
 import ResumeSkills from './components/ResumeSkills';
 
 const ResumePage = () => (
-
     <section className="page" id="RESUME">
         <PageHeader>
             <PageTitle>Resume</PageTitle>
