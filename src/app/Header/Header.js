@@ -44,7 +44,7 @@ const Header = ({page}) => {
 
             <NavRight>
                 {navBarItems.map((navBarItem) => (
-                    <a className={getNavBarItem(navBarItem.key)} href={navBarItem.value}>{navBarItem.value}</a>
+                    <a key={navBarItem.key} className={getNavBarItem(navBarItem.key)} href={navBarItem.value}>{navBarItem.value}</a>
                 ))}
             
             </NavRight>
