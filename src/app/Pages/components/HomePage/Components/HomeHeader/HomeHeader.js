@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import PageHeader from '~/components/PageHeader';
-import Flex from '~/components/Flex';
+import AvatarImage from '~/images/photo.png';
+import SpMainBg from '~/images/sp_main_bg.png';
 
 const SocialItems = styled.div`
     text-align: center;
@@ -64,13 +65,17 @@ const AvatarBlock  =  styled.div`
 
 const HomeHeaderBlock = styled(PageHeader)`
     display: flex;
+    background-image: url(${SpMainBg});
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 `;
 
 const HomeHeader =  () => (
     <HomeHeaderBlock>
         <Left>
             <AvatarBlock>
-                <Avatar src="images/photo.png"></Avatar>
+                <Avatar src={AvatarImage}></Avatar>
             </AvatarBlock>
         </Left>
 
