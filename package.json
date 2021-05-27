@@ -2,7 +2,7 @@
   "name": "jr-p1",
   "private": true,
   "scripts": {
-    "build": "webpack --watch"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",

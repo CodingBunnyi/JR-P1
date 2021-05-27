@@ -21,21 +21,5 @@ module.exports = {
         }
       }
     ]
-  },
-  devServer: {
-    contentBase: './',
-    open: true,
-    port: 9000,
-    publicPath: './',
-    watchContentBase: true,
-    hot: true,
-    inline: true
-  },
-
-  // plugins: [
-  //   new HtmlWebpackPlugin({
-  //     template: './src/index.html',
-  //   }),
-  //   new CleanWebpackPlugin()
-  // ]
+  }
 };
