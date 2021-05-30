@@ -10,14 +10,25 @@ class App extends React.Component {
         this.state = {
             page: 'HOME',
         };
+
+        this.handlePageChang = this.handlePageChang.bind(this);
+    }
+
+    handlePageChang(newPage) {
+        this.setState({
+            page: newPage,
+        });
     }
 
     render() {
-        const {page} = this.state;
+        const { page } = this.state;
 
         return (
-            <div class="main">       
-                <Header page={page}/>
+            <div class="main">
+                <Header 
+                    onPageChange={this.handlePageChang}
+                    page={page}
+                />
                 <Pages page={page}/>
                 <Footer />
             </div>

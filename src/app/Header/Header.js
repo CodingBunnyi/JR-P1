@@ -23,7 +23,9 @@ const Logo = styled.div`
     font-weight: 500;
 `;
 
-const NavbarItem = styled.a`
+const NavbarItem = styled.button`
+    border: 0;
+    cursor: pointer;
     padding: 8px 16px;
     text-decoration: none;
     color: #49515d;
@@ -31,6 +33,7 @@ const NavbarItem = styled.a`
     opacity: ${({ active }) => active ? 1 : 0.6};
     display: inline-block;
     position: relative;  
+    background-color: transparent;
 
     &::after {
         content: "";
@@ -54,7 +57,7 @@ const NavbarItem = styled.a`
     }
 `;
 
-const Header = ({page}) => {
+const Header = ({onPageChange,page}) => {
 
     const getNavBarItem = (key) => `navbar__item ${page === key && 'active-nav'}`
 
@@ -76,9 +79,10 @@ const Header = ({page}) => {
             <NavRight>
                 {navBarItems.map((navBarItem) => (
                     <NavbarItem 
+                        onClick={() => onPageChange(navBarItem.key)}
                         key={navBarItem.key} 
                         active={page === navBarItem.key} 
-                        href={navBarItem.value}
+                        href={navBarItem.key} 
                     >
                         {navBarItem.value}
                     </NavbarItem>
