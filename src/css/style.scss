@@ -25,36 +25,7 @@ body {
 .highlight {
     color: $default_green;
 }
-        .navbar__item {
-            padding: 8px 16px;
-            text-decoration: none;
-            color: $default_gray;
-            font-size: 15px;
-            opacity: 0.6;
-            display: inline-block;
-            position: relative;  
-        }
-
-        .navbar__item::after {
-            content: "";
-            position: absolute;
-            width: 0;
-            height: 2px;
-            background-color: $default_green;
-            right: 0;
-            left: 0;
-            bottom: 0;
-            margin: 0 auto;
-            transition:all 0.15s ease-in-out;
-        }
-
-        .navbar__item:hover, .active-nav{
-            opacity: 1;
-        }
-
-        .navbar__item:hover::after, .active-nav::after{
-            width:25px;
-        }
+        
 
 .page {
     border-radius: 15px;

@@ -23,6 +23,37 @@ const Logo = styled.div`
     font-weight: 500;
 `;
 
+const NavbarItem = styled.a`
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #49515d;
+    font-size: 15px;
+    opacity: ${({ active }) => active ? 1 : 0.6};
+    display: inline-block;
+    position: relative;  
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: ${({ active }) => active ? '25px' : 0};
+        height: 2px;
+        background-color: #2eca7f;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: 0 auto;
+        transition:all 0.15s ease-in-out;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &:hover::after {
+        width:25px;
+    }
+`;
+
 const Header = ({page}) => {
 
     const getNavBarItem = (key) => `navbar__item ${page === key && 'active-nav'}`
@@ -44,7 +75,13 @@ const Header = ({page}) => {
 
             <NavRight>
                 {navBarItems.map((navBarItem) => (
-                    <a key={navBarItem.key} className={getNavBarItem(navBarItem.key)} href={navBarItem.value}>{navBarItem.value}</a>
+                    <NavbarItem 
+                        key={navBarItem.key} 
+                        active={page === navBarItem.key} 
+                        href={navBarItem.value}
+                    >
+                        {navBarItem.value}
+                    </NavbarItem>
                 ))}
             
             </NavRight>

@@ -90,15 +90,15 @@ const Description = styled.p`
 
 const ResumeInfo = () => {
     const educationItems = [
-        {course:'Specialization Course', period: '2010', school: 'UQ', description: 'Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.'},
-        {course:'Specialization Course', period: '2010', school: 'UQ', description: 'Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.'},
-        {course:'Specialization Course', period: '2010', school: 'UQ', description: 'Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.'},
+        {course:'Specialization Course1', period: '2010', school: 'UQ', description: 'Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.'},
+        {course:'Specialization Course2', period: '2010', school: 'UQ', description: 'Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.'},
+        {course:'Specialization Course3', period: '2010', school: 'UQ', description: 'Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.'},
     ]
 
     const experienceItems = [
-        {experience:'Specialization Experience', period: '2010', company: 'Apple Inc', description: 'Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.'},
-        {experience:'Specialization Experience', period: '2010', company: 'Apple Inc', description: 'Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.'},
-        {experience:'Specialization Experience', period: '2010', company: 'Apple Inc', description: 'Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.'},
+        {experience:'Specialization Experience1', period: '2010', company: 'Apple Inc', description: 'Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.'},
+        {experience:'Specialization Experience2', period: '2010', company: 'Apple Inc', description: 'Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.'},
+        {experience:'Specialization Experience3', period: '2010', company: 'Apple Inc', description: 'Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.'},
     ]
 
     return (
@@ -108,7 +108,7 @@ const ResumeInfo = () => {
                 
                 <TimeLine>
                     {educationItems.map((educationItem) => (
-                        <TimeLineItem>
+                        <TimeLineItem key = {educationItem.course}> 
                             <TimeLineTitle>{educationItem.course}</TimeLineTitle>
                             <Period>{educationItem.period}</Period><Company>{educationItem.school}</Company>
                             <Description>
@@ -124,7 +124,7 @@ const ResumeInfo = () => {
                 <SubTitle>Experience</SubTitle>
                 <TimeLine>
                 {experienceItems.map((experienceItem) => (
-                    <TimeLineItem>
+                    <TimeLineItem key = {experienceItem.experience}>
                         <TimeLineTitle>{experienceItem.experience}</TimeLineTitle>
                         <Period>{experienceItem.period}</Period><Company>{experienceItem.company}</Company>
                         <Description>
