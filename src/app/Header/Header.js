@@ -4,7 +4,6 @@ import Highlight from '~/components/Highlight';
 import Flex from '~/components/Flex';
 import DefaultGray from '~/components/DefaultGray';
 
-
 const Nav = styled(Flex)`
     padding: 30px 0;
     align-items: center;

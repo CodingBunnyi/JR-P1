@@ -4,5 +4,4 @@ import App from './App';
 import './css/style.scss';
 import './css/normalize.css';
 
-
 ReactDOM.render(<App />,document.querySelector('#app'));
