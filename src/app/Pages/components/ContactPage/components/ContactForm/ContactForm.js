@@ -48,10 +48,16 @@ const SubmitButton = styled.input`
     border:0;
     background-color: #2eca7f;
     color: #fff;
-    padding: 0.5em 1.5em;
+    padding: 1rem 1.5rem;
     border-radius: 3px;
-    box-shadow: 0 1px 1px rgb(0 0 0 / 10%), 0 2px 4px rgb(0 0 0 / 30%);
     font-weight: 500;
+    cursor: pointer;
+    transition:all 0.3s ease-in-out;
+
+    &:hover {
+        transform: translateY(-7px);
+        box-shadow: 0 7px 12px rgba(0, 0, 0, 0.15);
+    }
 `;
 
 

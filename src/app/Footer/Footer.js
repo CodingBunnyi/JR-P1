@@ -1,15 +1,28 @@
 import React from 'react';
+import styled from 'styled-components';
+import Highlight from '~/components/Highlight';
+
+const FooterContainer = styled.footer`
+    text-align: center;
+    margin-top: 30px;
+`;
+
+const Copyrights = styled.div`
+    margin-bottom: 12px;
+    font-size: 12px;
+    color: #9e9e9e;
+`;
 
 const Footer = () => (
-    <footer>    
-        <div class="copyrights">
-            © 2017 All rights reserved. Designed by <a href="#">Jiangren</a>
-        </div>
+    <FooterContainer>    
+        <Copyrights>
+            © 2017 All rights reserved. Designed by <Highlight >Jiangren</Highlight>
+        </Copyrights>
 
-        <div class="copyrights">
-            Australia IT Professional Community <a href="#">Melbourne</a><a href="#">Sydney</a><a href="#">Brisbane</a>
-        </div>
-    </footer>
+        <Copyrights>
+            Australia IT Professional Community <Highlight>Melbourne Sydney Brisbane</Highlight>
+        </Copyrights>
+    </FooterContainer>
 );
 
 export default Footer;
