@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Highlight from '~/components/Highlight';
-import DefaultGray from '~/components/DefaultGray';
 import PageContent from '~/components/PageContent';
 import ContentSection from '~/components/ContentSection';
 import SubTitle from '~/components/SubTitle';
@@ -11,8 +10,9 @@ const InfoTitle = styled.span`
     display: inline-block;
 `;
 
-const InfoValue = styled(DefaultGray)`
+const InfoValue = styled.span`
     opacity: 0.6;
+    color: #49515d;
 `;
 
 const Email = styled.a`

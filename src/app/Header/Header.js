@@ -1,12 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import Highlight from '~/components/Highlight';
-import Flex from '~/components/Flex';
-import DefaultGray from '~/components/DefaultGray';
 
-const Nav = styled(Flex)`
+const Nav = styled.div`
     padding: 30px 0;
     align-items: center;
+    display: flex;
 `;
 
 const NavLeft = styled.div`
@@ -20,6 +19,7 @@ const NavRight = styled.div`
 const Logo = styled.div`
     font-size: 1.5rem;
     font-weight: 500;
+    color: #49515d;
 `;
 
 const NavbarItem = styled.button`
@@ -71,7 +71,7 @@ const Header = ({onPageChange,page}) => {
         <Nav>
             <NavLeft>
                 <Logo>
-                    <DefaultGray>John</DefaultGray> <Highlight>Doe</Highlight>
+                    John <Highlight>Doe</Highlight>
                 </Logo>
             </NavLeft>
 
