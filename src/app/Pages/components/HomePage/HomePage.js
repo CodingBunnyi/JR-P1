@@ -1,12 +1,13 @@
 import React from 'react';
 import HomeContent from './components/HomeContent';
 import HomeHeader from './components/HomeHeader';
+import Page from '../Page';
 
 const HomePage = () => (
-    <section className="page" id="HOME">
+    <Page id="HOME">
         <HomeHeader />
         <HomeContent />
-    </section>
+    </Page>
 );
 
 export default HomePage;

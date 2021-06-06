@@ -5,13 +5,14 @@ import PageHeader from '~/components/PageHeader';
 import PageContent from '~/components/PageContent';
 import ContactInfo from './components/ContactInfo';
 import ContactForm from './components/ContactForm';
+import Page from '../Page';
 
 const ContactPageContent = styled(PageContent)`
     display: flex;
 `;
 
 const ContactPage = () => (
-    <section className="page" id="CONTACT">
+    <Page id="CONTACT">
         <PageHeader>
             <PageTitle>Contact</PageTitle>
         </PageHeader>
@@ -21,7 +22,7 @@ const ContactPage = () => (
 
             <ContactForm />
         </ContactPageContent>
-    </section>
+    </Page>
 );
 
 export default ContactPage;

@@ -4,8 +4,6 @@ import ResumePage from './components/ResumePage';
 import ServicesPage from './components/ServicesPage';
 import ContactPage from './components/ContactPage';
 
-
-
 const Pages = ({page}) => {
 
     const currentPage = {

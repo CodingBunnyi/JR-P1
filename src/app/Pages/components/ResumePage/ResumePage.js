@@ -4,9 +4,10 @@ import PageHeader from '~/components/PageHeader';
 import PageContent from '~/components/PageContent';
 import ResumeInfo from './components/ResumeInfo';
 import ResumeSkills from './components/ResumeSkills';
+import Page from '../Page';
 
 const ResumePage = () => (
-    <section className="page" id="RESUME">
+    <Page id="RESUME">
         <PageHeader>
             <PageTitle>Resume</PageTitle>
         </PageHeader>
@@ -16,7 +17,7 @@ const ResumePage = () => (
             
             <ResumeSkills />
         </PageContent>  
-    </section>
+    </Page>
 );
 
 export default ResumePage;

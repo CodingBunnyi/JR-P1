@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import SubTitle from '~/components/SubTitle';
 import Highlight from '~/components/Highlight';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser, faEnvelope, faComment } from '@fortawesome/free-solid-svg-icons'
+
 
 const ContactFormBlock = styled.div`
     width: 50%;
@@ -40,8 +43,19 @@ const ContactInput = styled.input`
 `;
 
 const TextArea = styled.textarea`
+    position: relative;
+    background: transparent;
     border: 0;
     border-radius: 0;
+    height:37px;
+    &:focus {
+        background: transparent;
+        box-shadow: none;
+        outline: none;
+    
+    }
+
+    
 `;
 
 const SubmitButton = styled.input`
@@ -60,6 +74,16 @@ const SubmitButton = styled.input`
     }
 `;
 
+const IconContainer = styled.div`
+    background-color: #fafafa;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center; 
+    width: 40px;
+    height: 44px;
+`;
+
 
 const ContactForm = () => (
     <ContactFormBlock>
@@ -67,19 +91,25 @@ const ContactForm = () => (
 
         <form class="contact-from">
             <FormGroup>
-                <i class="fa fa-user"></i>
+                <IconContainer>
+                    <FontAwesomeIcon icon={faUser} size="lg" className="contactFormIcon"style={{height:"44px", color:"#bdbdbd"}}/>
+                </IconContainer>
                 <Label>Full Name</Label>
                 <ContactInput id="form_name" type="text" name="name" class="form-control" placeholder required="required" />
             </FormGroup>
             
             <FormGroup>
-                <i class="fa fa-envelope"></i>
+                <IconContainer>
+                    <FontAwesomeIcon icon={faEnvelope} size="lg" className="contactFormIcon"style={{height:"44px", color:"#bdbdbd"}}/>
+                </IconContainer>
                 <Label>Email Address</Label>
                 <ContactInput id="form_email" type="text" name="email" class="form-control" placeholder required="required" />
             </FormGroup>
 
-            <FormGroup>
-                <i class="fa fa-comment"></i>
+            <FormGroup>             
+            <IconContainer>
+                    <FontAwesomeIcon icon={faComment} size="lg" className="contactFormIcon"style={{height:"44px", color:"#bdbdbd"}}/>
+                </IconContainer>
                 <Label>Message for Me</Label>
                 <TextArea id="form_comment" type="text" name="comment" class="form-control" placeholder required="required"></TextArea>
             </FormGroup>

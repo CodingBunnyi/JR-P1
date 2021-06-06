@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import SubTitle from '~/components/SubTitle';
 import Highlight from '~/components/Highlight';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMapMarkerAlt, faEnvelope, faPhone, faCheck } from '@fortawesome/free-solid-svg-icons'
 
 const ContactInfoBlock = styled.div`
     width:50%;
@@ -40,7 +42,7 @@ const ContactInfo = () => (
 
         <InfoItemBlock>
             <IconContainer>
-                <i class="fas fa-map-marker-alt contact-icon"></i>
+                <FontAwesomeIcon icon={faMapMarkerAlt} size="lg" style={{height:"36px", color:"#2eca7f"}}/>
             </IconContainer>
 
             <TextContainer>
@@ -50,7 +52,7 @@ const ContactInfo = () => (
 
         <InfoItemBlock>
             <IconContainer>
-                <i class="fas fa-envelope contact-icon"></i>
+                <FontAwesomeIcon icon={faEnvelope} size="lg" style={{height:"36px", color:"#2eca7f"}}/>
             </IconContainer>
 
             <TextContainer>
@@ -60,7 +62,7 @@ const ContactInfo = () => (
 
         <InfoItemBlock>
             <IconContainer>
-                <i class="fas fa-phone contact-icon"></i>
+                <FontAwesomeIcon icon={faPhone} size="lg" style={{height:"36px", color:"#2eca7f"}}/>
             </IconContainer>
 
             <TextContainer>
@@ -70,7 +72,7 @@ const ContactInfo = () => (
 
         <InfoItemBlock>
             <IconContainer>
-                <i class="fas fa-check contact-icon"></i>
+                <FontAwesomeIcon icon={faCheck} size="lg" style={{height:"36px", color:"#2eca7f"}}/>
             </IconContainer>
 
             <TextContainer>

@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import PageHeader from '~/components/PageHeader';
 import AvatarImage from '~/images/photo.png';
 import SpMainBg from '~/images/sp_main_bg.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 const SocialItems = styled.div`
     text-align: center;
@@ -15,7 +17,7 @@ const SocialItem = styled.a`
     height: 36px;
     border-radius: 24px;
     background-color: #fff;
-    margin: 0 1px;
+    margin: 0 5px;
     color: #9e9e9e;
     text-align: center;
     box-shadow: 0px 3px 8px 0px rgb(0 0 0 / 10%);
@@ -71,6 +73,7 @@ const HomeHeaderBlock = styled(PageHeader)`
     background-repeat: no-repeat;
 `;
 
+
 const HomeHeader =  () => (
     <HomeHeaderBlock>
         <Left>
@@ -87,21 +90,15 @@ const HomeHeader =  () => (
 
             <SocialItems>
                 <SocialItem href="#">
-                    <i class="fab fa-twitter">
-                        
-                    </i>
+                    <FontAwesomeIcon icon={faTwitter} style={{height:"36px"}}/>
                 </SocialItem>
 
                 <SocialItem href="#">
-                    <i class="fab fa-facebook">
-                        
-                    </i>
+                    <FontAwesomeIcon icon={faFacebook}  style={{height:"36px"}}/>
                 </SocialItem>
 
                 <SocialItem href="#">
-                    <i class="fab fa-instagram">
-                        
-                    </i>
+                    <FontAwesomeIcon icon={faInstagram}  style={{height:"36px"}}/>
                 </SocialItem>
             </SocialItems>
         </Right>

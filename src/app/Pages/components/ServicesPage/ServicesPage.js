@@ -4,9 +4,10 @@ import PageHeader from '~/components/PageHeader';
 import PageContent from '~/components/PageContent';
 import ServicesBlock from './components/ServicesBlock';
 import ClientsBlock from './components/ClientsBlock';
+import Page from '../Page';
 
 const ServicesPage = () => (
-    <section class="page" id="SERVICES">
+    <Page id="SERVICES">
         <PageHeader>
             <PageTitle>Services</PageTitle>
         </PageHeader>
@@ -16,7 +17,7 @@ const ServicesPage = () => (
 
             <ClientsBlock />
         </PageContent>
-    </section>
+    </Page>
 );
 
 export default ServicesPage;
