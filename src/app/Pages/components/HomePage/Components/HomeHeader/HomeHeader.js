@@ -11,7 +11,7 @@ const SocialItems = styled.div`
     margin-top: 20px;
 `;
 
-const SocialItem = styled.a`
+const SocialItem = styled.button`
     display: inline-block;
     width: 36px;
     height: 36px;
@@ -21,6 +21,8 @@ const SocialItem = styled.a`
     color: #9e9e9e;
     text-align: center;
     box-shadow: 0px 3px 8px 0px rgb(0 0 0 / 10%);
+    cursor: pointer;
+    border: 0;
 `;
 
 const MainTitle = styled.h1`
@@ -89,15 +91,15 @@ const HomeHeader =  () => (
             </TitleBlock>
 
             <SocialItems>
-                <SocialItem href="#">
+                <SocialItem>
                     <FontAwesomeIcon icon={faTwitter} style={{height:"36px"}}/>
                 </SocialItem>
 
-                <SocialItem href="#">
+                <SocialItem>
                     <FontAwesomeIcon icon={faFacebook}  style={{height:"36px"}}/>
                 </SocialItem>
 
-                <SocialItem href="#">
+                <SocialItem>
                     <FontAwesomeIcon icon={faInstagram}  style={{height:"36px"}}/>
                 </SocialItem>
             </SocialItems>
