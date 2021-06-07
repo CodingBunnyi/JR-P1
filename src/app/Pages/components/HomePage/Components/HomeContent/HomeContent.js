@@ -23,6 +23,9 @@ const Email = styled.a`
 
 const InfoList = styled.ul`
     list-style: none;
+    @media screen and (max-width: 1024px) {
+        padding: 0;
+    }
 `;
 
 const ListItem = styled.li`
@@ -37,6 +40,10 @@ const Description = styled.p`
 
 const HompageContent = styled(PageContent)`
     display: flex;
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 const HomeContent = () => (

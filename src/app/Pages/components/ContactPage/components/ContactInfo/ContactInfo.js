@@ -7,6 +7,9 @@ import { faMapMarkerAlt, faEnvelope, faPhone, faCheck } from '@fortawesome/free-
 
 const ContactInfoBlock = styled.div`
     width:50%;
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
 `;
 
 const InfoItemBlock = styled.div`

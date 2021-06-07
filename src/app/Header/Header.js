@@ -6,6 +6,9 @@ const Nav = styled.div`
     padding: 30px 0;
     align-items: center;
     display: flex;
+    @media screen and (max-width: 1024px) {
+        margin: 0 15px;
+    }
 `;
 
 const NavLeft = styled.div`

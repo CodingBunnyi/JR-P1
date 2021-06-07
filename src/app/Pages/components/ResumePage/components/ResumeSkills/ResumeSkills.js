@@ -6,6 +6,9 @@ import Highlight from '~/components/Highlight';
 
 const ResumeSkillsContainer = styled.div`
     display: flex;
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
 `;
 
 const SkillName = styled.h4`

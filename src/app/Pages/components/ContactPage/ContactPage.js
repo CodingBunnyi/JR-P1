@@ -9,6 +9,9 @@ import Page from '../Page';
 
 const ContactPageContent = styled(PageContent)`
     display: flex;
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
 `;
 
 const ContactPage = () => (

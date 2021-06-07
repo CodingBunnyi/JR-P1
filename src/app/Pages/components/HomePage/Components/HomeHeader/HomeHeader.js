@@ -42,11 +42,14 @@ const TitleBlock = styled.div`
 `
 
 const Left = styled.div`
-    width:30%;
+    max-width: 280px;
+    @media screen and (max-width: 1024px) {
+        max-width: 200px;
+    }
 `;
 
 const Right = styled.div`
-    width:70%;
+    flex:1;
 `;
 
 const Avatar = styled.img`
@@ -65,6 +68,10 @@ const AvatarBlock  =  styled.div`
         box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
         transform:translateY(-7px);
     }
+
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 0;
+    }
 `;
 
 const HomeHeaderBlock = styled(PageHeader)`
@@ -73,6 +80,11 @@ const HomeHeaderBlock = styled(PageHeader)`
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    flex-direction: row;
+    @media screen and (max-width: 1024px) {
+        flex-direction:column;
+        align-items: center;
+    }
 `;
 
 

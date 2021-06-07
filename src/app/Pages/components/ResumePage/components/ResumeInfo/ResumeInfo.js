@@ -7,6 +7,9 @@ import Highlight from '~/components/Highlight';
 
 const ResumeInfoContainer = styled.div`
     display: flex;
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
 `;
 
 const TimeLine = styled.div`

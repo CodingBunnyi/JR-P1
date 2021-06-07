@@ -8,6 +8,9 @@ import { faUser, faEnvelope, faComment } from '@fortawesome/free-solid-svg-icons
 
 const ContactFormBlock = styled.div`
     width: 50%;
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
 `;
 
 const FormGroup = styled.div`
