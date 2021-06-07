@@ -16,7 +16,7 @@ const Nav = styled.div`
         box-shadow: 0px 3px 8px 0px rgb(0 0 0 / 10%);
         position: fixed;
         width: 100%;
-        z-index: 1;
+        z-index: 100;
     }
 `;
 
