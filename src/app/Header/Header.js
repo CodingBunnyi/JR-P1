@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Highlight from '~/components/Highlight';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+
 
 const Nav = styled.div`
     padding: 30px 0;
@@ -68,7 +69,7 @@ const NavbarItem = styled.button`
         left: 0;
         bottom: 0;
         margin: 0 auto;
-        transition:all 0.15s ease-in-out;
+        transition: all 0.15s ease-in-out;
     }
 
     &:hover {
@@ -76,7 +77,7 @@ const NavbarItem = styled.button`
     }
 
     &:hover::after {
-        width:25px;
+        width: 25px;
     }
 
     @media screen and (max-width: 1024px) {
@@ -85,9 +86,8 @@ const NavbarItem = styled.button`
 `;
 
 const HeaderSideBar = styled.div`
-
+    width: ${({ toggle }) => toggle ? '100%' : '0%'};
     @media screen and (max-width: 1024px) {
-        width: 100%;
         max-width: 320px;
         height: calc(100% - 50px);
         right: 0;
@@ -98,6 +98,10 @@ const HeaderSideBar = styled.div`
         box-shadow: 0px 10px 10px 0px rgb(0 0 0 / 20%);
         transition: all 0.44s ease-in-out;
         position: fixed;
+    }
+
+    @media screen and (min-width: 1024px) {
+        display: none;
     }
 `;
 
@@ -136,11 +140,7 @@ const SideBarItem = styled.button`
     }
 
     &:hover::after {
-        width:25px;
-    }
-
-    @media screen and (min-width: 1024px) {
-        display: none;
+        width: 25px;
     }
 `;
 
@@ -150,63 +150,67 @@ const SideBarButton = styled.button`
     border: 0;
     cursor: pointer;
     background-color: transparent;
+    @media screen and (min-width: 1024px) {
+        display: none;
+    }
 `;
 
-const Header = ({onPageChange,page}) => {
-
-    const getNavBarItem = (key) => `navbar__item ${page === key && 'active-nav'}`
-
-    const navBarItems = [
-        {key: 'HOME', value: 'Home'},
-        {key: 'RESUME', value: 'Resume'},
-        {key: 'SERVICES', value: 'Services'},
-        {key: 'CONTACT', value: 'Contact'},
-    ]
-
-    return (
-        <div>
-            <HeaderSideBar>
-                <SideNav>
-                    {navBarItems.map((navBarItem) => (
-                        <SideBarItem 
-                            onClick={() => onPageChange(navBarItem.key)}
-                            key={navBarItem.key} 
-                            active={page === navBarItem.key} 
-                            href={navBarItem.key} 
-                        >
-                            {navBarItem.value}
-                        </SideBarItem>
-                    ))}
-                </SideNav>
-            </HeaderSideBar>
-
-            <Nav>
-                <NavLeft>
-                    <Logo>
-                        John <NavHighlight>Doe</NavHighlight>
-                    </Logo>
-                </NavLeft>
-
-                <NavRight>
-
-                <SideBarButton>
-                    <FontAwesomeIcon icon={faBars} size="lg" />
-                </SideBarButton>
-                    {navBarItems.map((navBarItem) => (
-                        <NavbarItem 
-                            onClick={() => onPageChange(navBarItem.key)}
-                            key={navBarItem.key} 
-                            active={page === navBarItem.key} 
-                            href={navBarItem.key} 
-                        >
-                            {navBarItem.value}
-                        </NavbarItem>
-                    ))}
-                
-                </NavRight>
-            </Nav>
-        </div>
-    )
+class Header extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    
+    render () {
+        const navBarItems = [
+            {key: 'HOME', value: 'Home'},
+            {key: 'RESUME', value: 'Resume'},
+            {key: 'SERVICES', value: 'Services'},
+            {key: 'CONTACT', value: 'Contact'},
+        ]
+        
+        return (
+            <div>
+                <HeaderSideBar toggle={this.props.toggle}>
+                    <SideNav>
+                        {navBarItems.map((navBarItem) => (
+                            <SideBarItem 
+                                onClick={() => this.props.onPageChange(navBarItem.key)}
+                                key={navBarItem.key} 
+                                active={this.props.page === navBarItem.key} 
+                                href={navBarItem.key} 
+                            >
+                                {navBarItem.value}
+                            </SideBarItem>
+                        ))}
+                    </SideNav>
+                </HeaderSideBar>
+    
+                <Nav>
+                    <NavLeft>
+                        <Logo>
+                            John <NavHighlight>Doe</NavHighlight>
+                        </Logo>
+                    </NavLeft>
+    
+                    <NavRight>
+                    <SideBarButton onClick={() => this.props.toggleButton()}>
+                        <FontAwesomeIcon icon={faBars} size="lg" />
+                    </SideBarButton>
+                        {navBarItems.map((navBarItem) => (
+                            <NavbarItem 
+                                onClick={() => this.props.onPageChange(navBarItem.key)}
+                                key={navBarItem.key} 
+                                active={this.props.page === navBarItem.key} 
+                                href={navBarItem.key} 
+                            >
+                                {navBarItem.value}
+                            </NavbarItem>
+                        ))}
+                    </NavRight>
+                </Nav>
+            </div>
+        )
+    }
 };
 
 export default Header;

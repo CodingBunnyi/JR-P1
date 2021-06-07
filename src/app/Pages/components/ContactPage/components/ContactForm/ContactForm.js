@@ -23,7 +23,7 @@ const FormGroup = styled.div`
 const Label = styled.label`
     position: absolute;
     top:0;
-    left:54px;
+    left: 54px;
     opacity: 0.4;
     position: absolute;
     top: 9px;
@@ -34,7 +34,7 @@ const Label = styled.label`
 const ContactInput = styled.input`
     position: relative;
     background: transparent;
-    height:42px;
+    height: 42px;
     border: 0;
     border-radius: 0;
     &:focus {
@@ -50,7 +50,7 @@ const TextArea = styled.textarea`
     background: transparent;
     border: 0;
     border-radius: 0;
-    height:37px;
+    height: 37px;
     &:focus {
         background: transparent;
         box-shadow: none;
@@ -62,14 +62,14 @@ const TextArea = styled.textarea`
 `;
 
 const SubmitButton = styled.input`
-    border:0;
+    border: 0;
     background-color: #2eca7f;
     color: #fff;
     padding: 1rem 1.5rem;
     border-radius: 3px;
     font-weight: 500;
     cursor: pointer;
-    transition:all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
         transform: translateY(-7px);
@@ -80,8 +80,8 @@ const SubmitButton = styled.input`
 const IconContainer = styled.div`
     background-color: #fafafa;
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     text-align: center; 
     width: 40px;
     height: 44px;
@@ -92,32 +92,32 @@ const ContactForm = () => (
     <ContactFormBlock>
         <SubTitle>Contact <Highlight>Form</Highlight></SubTitle>
 
-        <form class="contact-from">
+        <form>
             <FormGroup>
                 <IconContainer>
-                    <FontAwesomeIcon icon={faUser} size="lg" className="contactFormIcon"style={{height:"44px", color:"#bdbdbd"}}/>
+                    <FontAwesomeIcon icon={faUser} size="lg" style={{height:"44px", color:"#bdbdbd"}}/>
                 </IconContainer>
                 <Label>Full Name</Label>
-                <ContactInput id="form_name" type="text" name="name" class="form-control" placeholder required="required" />
+                <ContactInput id="form_name" type="text" name="name" />
             </FormGroup>
             
             <FormGroup>
                 <IconContainer>
-                    <FontAwesomeIcon icon={faEnvelope} size="lg" className="contactFormIcon"style={{height:"44px", color:"#bdbdbd"}}/>
+                    <FontAwesomeIcon icon={faEnvelope} size="lg" style={{height:"44px", color:"#bdbdbd"}}/>
                 </IconContainer>
                 <Label>Email Address</Label>
-                <ContactInput id="form_email" type="text" name="email" class="form-control" placeholder required="required" />
+                <ContactInput id="form_email" type="text" name="email" />
             </FormGroup>
 
             <FormGroup>             
             <IconContainer>
-                    <FontAwesomeIcon icon={faComment} size="lg" className="contactFormIcon"style={{height:"44px", color:"#bdbdbd"}}/>
+                    <FontAwesomeIcon icon={faComment} size="lg" style={{height:"44px", color:"#bdbdbd"}}/>
                 </IconContainer>
                 <Label>Message for Me</Label>
-                <TextArea id="form_comment" type="text" name="comment" class="form-control" placeholder required="required"></TextArea>
+                <TextArea id="form_comment" type="text" name="comment"></TextArea>
             </FormGroup>
 
-            <SubmitButton class="submit-btn" type="submit" value="SEND MESSAGE" />
+            <SubmitButton type="submit" value="SEND MESSAGE" />
         </form>
     </ContactFormBlock>        
 );

@@ -22,22 +22,31 @@ class App extends React.Component {
         };
 
         this.handlePageChang = this.handlePageChang.bind(this);
+        this.toggleButton = this.toggleButton.bind(this);
     }
 
     handlePageChang(newPage) {
         this.setState({
             page: newPage,
+            toggle:false,
+        });
+    }
+    toggleButton () {
+        this.setState({
+            toggle: !this.state.toggle,
         });
     }
 
     render() {
-        const { page } = this.state;
+        const { page , toggle} = this.state;
 
         return (
             <Main>
                 <Header 
                     onPageChange={this.handlePageChang}
+                    toggleButton={this.toggleButton}
                     page={page}
+                    toggle={toggle}
                 />
                 <Pages page={page}/>
                 <Footer />
